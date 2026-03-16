@@ -1,0 +1,390 @@
+<section class="intro">
+<video autoplay muted loop playsinline class="introVideo">
+    <source src="trailer.mp4" type="video/mp4">
+</video>
+
+<div class="introText">
+<h1>THE ETERNAL WITHER STORM</h1>
+</div>
+</section>
+
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<title>The Eternal Wither Storm</title>
+.intro{
+    position:relative;
+    height:100vh;
+    overflow:hidden;
+}
+
+.introVideo{
+    position:absolute;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.introText{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    font-size:40px;
+    color:#d7a3ff;
+    text-shadow:0 0 30px purple;
+}
+<style>
+.storyText{
+color:#00ff66;
+text-align:center;
+}
+
+.trailerBox{
+display:flex;
+justify-content:center;
+}
+
+.downloadBox{
+display:flex;
+justify-content:center;
+margin-top:20px;
+}
+body{
+    font-family: 'Press Start 2P', cursive;
+}
+body{
+    <div class="portal"></div>
+    margin:0;
+    background: radial-gradient(circle at center, #3b0066, #000);
+    overflow-x:hidden;
+}
+
+/* animated portal */
+.portal{
+    position:fixed;
+    width:600px;
+    height:600px;
+    border-radius:50%;
+    background: radial-gradient(circle,#7a00ff,#000);
+    filter: blur(80px);
+    animation: portalSpin 20s linear infinite;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    z-index:-1;
+}
+
+@keyframes portalSpin{
+    0%{ transform:translate(-50%,-50%) rotate(0deg);}
+    100%{ transform:translate(-50%,-50%) rotate(360deg);}
+}
+/* STAR BACKGROUND */
+
+#stars{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+z-index:-2;
+background:black;
+}
+
+/* LIGHTNING */
+
+.lightning{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+pointer-events:none;
+animation:flash 8s infinite;
+z-index:-1;
+}
+
+@keyframes flash{
+0%{background:rgba(255,255,255,0);}
+94%{background:rgba(255,255,255,0);}
+95%{background:rgba(255,255,255,.7);}
+96%{background:rgba(255,255,255,0);}
+98%{background:rgba(255,255,255,.9);}
+100%{background:rgba(255,255,255,0);}
+}
+
+/* HERO */
+
+.hero{
+height:100vh;
+background-image:url("scene4.png");
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+}
+
+.hero h1{
+font-size:70px;
+letter-spacing:4px;
+color:#e6c6ff;
+text-shadow:0 0 25px #b84dff;
+}
+
+.hero button{
+padding:14px 30px;
+font-size:18px;
+background:#8a2be2;
+border:none;
+border-radius:8px;
+color:white;
+cursor:pointer;
+}
+
+/* TRAILER */
+
+.trailer video{
+width:700px;
+border-radius:12px;
+box-shadow:0 0 40px #8a2be2;
+}
+
+/* STORY */
+
+.story{
+max-width:700px;
+margin:auto;
+line-height:1.6;
+}
+
+/* GALLERY */
+
+.gallery{
+display:flex;
+justify-content:center;
+gap:30px;
+margin-top:40px;
+flex-wrap:wrap;
+}
+
+.gallery img{
+width:220px;
+border-radius:12px;
+box-shadow:0 0 20px #8a2be2;
+transition:0.4s;
+}
+
+.gallery img:hover{
+transform:scale(1.1);
+box-shadow:0 0 40px #b84dff;
+}
+
+/* BUTTON */
+
+.download{
+margin-top:40px;
+}
+
+.download button{
+padding:14px 30px;
+font-size:18px;
+background:#8a2be2;
+border:none;
+border-radius:8px;
+color:white;
+cursor:pointer;
+}
+.intro{
+position:relative;
+height:100vh;
+overflow:hidden;
+}
+
+.introVideo{
+position:absolute;
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+.introText{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+font-size:40px;
+color:#d7a3ff;
+text-shadow:0 0 30px purple;
+}
+.storyText{
+color:#00ff66;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<section class="intro">
+
+<video autoplay muted loop class="introVideo">
+<source src="trailer.mp4" type="video/mp4">
+</video>
+
+<div class="introText">
+THE ETERNAL WITHER STORM
+</div>
+
+</section>
+<canvas id="stars"></canvas>
+<div class="lightning"></div>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<h1>THE ETERNAL WITHER STORM</h1>
+
+<p>A Mine-imator Cinematic Adventure</p>
+
+<button onclick="location.href='#trailer'">
+Watch Trailer
+</button>
+
+</section>
+
+<!-- TRAILER -->
+
+<section id="trailer" class="trailer">
+
+<h2>Official Trailer</h2>
+
+<div class="trailerBox">
+
+<video controls width="600">
+<source src="trailer.mp4" type="video/mp4">
+</video>
+
+</div>
+
+.trailerBox{
+display:flex;
+justify-content:center;
+}
+
+</section>
+
+<!-- STORY -->
+
+<section class="story">
+
+<h2>The Story</h2>
+
+<p class="storyText">
+A mysterious command block has awakened a monster beyond imagination.
+The Wither Storm returns bigger, stronger, and unstoppable.
+Jesse and friends must travel across the Overworld, Nether,
+and the End to stop it before it consumes the entire world.
+</p>
+
+</section>
+
+<!-- GALLERY -->
+
+<div class="gallery">
+
+<img src="scene1.png">
+<img src="scene2.png">
+<img src="scene3.png">
+<img src="scene4.png">
+
+</div>
+
+<!-- DOWNLOAD -->
+
+
+<button>
+
+<div class="downloadBox">
+
+<a href="New project copy" download>
+<button class="downloadButton">
+Download Mine-imator Project
+</button>
+</a>
+
+</div>
+<p style="text-align:center;">
+File size: 240MB | Mine-imator Project
+</p>
+
+</button>
+
+</div>
+
+<script>
+
+/* STAR PARTICLES */
+
+const canvas = document.getElementById("stars");
+const ctx = canvas.getContext("2d");
+
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+let stars=[];
+
+for(let i=0;i<200;i++){
+stars.push({
+x:Math.random()*canvas.width,
+y:Math.random()*canvas.height,
+r:Math.random()*2
+});
+}
+
+function draw(){
+
+ctx.clearRect(0,0,canvas.width,canvas.height);
+
+ctx.fillStyle="white";
+
+stars.forEach(s=>{
+ctx.beginPath();
+ctx.arc(s.x,s.y,s.r,0,Math.PI*2);
+ctx.fill();
+
+s.y+=0.2;
+
+if(s.y>canvas.height){
+s.y=0;
+}
+});
+
+requestAnimationFrame(draw);
+}
+
+draw();
+<script>
+
+const observer = new IntersectionObserver(entries=>{
+    entries.forEach(entry=>{
+        if(entry.isIntersecting){
+            entry.target.classList.add("show");
+        }
+    });
+});
+
+document.querySelectorAll(".hidden").forEach(el=>{
+    observer.observe(el);
+});
+
+</script>
+</script>
+
+</body>
+</html>
